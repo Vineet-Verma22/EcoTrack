@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Admin Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1><span class="leaf">🌱</span> EcoTrack </h1>
+            <p>Admin Login</p>
+        </div>
+
+        <form action="dashboard.html" method="post">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address"
+                    required
+                    autocomplete="email"
+                >
+                <div class="error-message">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="At least 8 characters, 1 uppercase, 1 number"
+                    required
+                    minlength="8"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+                    autocomplete="current-password"
+                >
+                <div class="error-message">Password must be at least 8 characters with 1 uppercase and 1 number</div>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#" tabindex="0">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-button">Login</button>
+        </form>
+
+        <div class="footer">
+            <p>© 2025 Tera Compute | All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Advertisement Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Ads.css">
+</head>
+<body>
+    <!-- Natural floating background with glassmorphism -->
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">EcoTrack</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="manageBin.html">Manage Bins</a></li>
+                        <li><a href="#" class="active">Ads</a></li>
+                        <li><a href="Alerts.html">Alerts</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">📢 Advertisement Management</h1>
+
+            <!-- Analytics Cards -->
+            <section class="analytics-grid">
+                <div class="analytics-card">
+                    <span class="icon">📊</span>
+                    <div class="label">Total Advertisements</div>
+                    <div class="value">24</div>
+                </div>
+                <div class="analytics-card">
+                    <span class="icon">👁️</span>
+                    <div class="label">Most Viewed Ad</div>
+                    <div class="value" style="font-size: 1.4rem; color: #2E7D32;">"Green Future Campaign"</div>
+                </div>
+            </section>
+
+            <!-- Upload New Ad Form -->
+            <section class="upload-section">
+                <h3>📤 Upload New Advertisement</h3>
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label for="ad-name">Advertisement Name</label>
+                        <input type="text" id="ad-name" name="ad-name" placeholder="Enter advertisement name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bin-selector">Assign to Bins</label>
+                        <select id="bin-selector" name="bin-selector" required>
+                            <option value="">Select bin(s) for advertisement</option>
+                            <option value="bin-01">Bin #01 - Park Central</option>
+                            <option value="bin-05">Bin #05 - Mall Entrance</option>
+                            <option value="bin-12">Bin #12 - University Campus</option>
+                            <option value="bin-17">Bin #17 - Shopping District</option>
+                            <option value="bin-23">Bin #23 - Residential Area</option>
+                            <option value="all-zones">All Zone A Bins</option>
+                            <option value="all-bins">All Active Bins</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label for="ad-file">Upload Advertisement File</label>
+                        <div class="file-input-wrapper">
+                            <input type="file" id="ad-file" name="ad-file" accept=".jpg,.jpeg,.png,.gif,.mp4,.mov" required>
+                            <label for="ad-file" class="file-input-label">
+                                📎 Click to upload image or video file<br>
+                                <small>Supported: JPG, PNG, GIF, MP4, MOV (Max 50MB)</small>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="grid-column: 1 / -1; text-align: center;">
+                        <button type="submit" class="submit-btn">🚀 Deploy Advertisement</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Current Advertisements -->
+            <section class="ads-section">
+                <h3>🗂️ Current Advertisements</h3>
+                <div class="ads-grid">
+                    <div class="ad-card">
+                        <div class="ad-image">🌍</div>
+                        <div class="ad-content">
+                            <h4>Green Future Campaign</h4>
+                            <div class="ad-meta">
+                                <span>📍 Assigned to: Bin #01, #05, #12</span>
+                                <span>📅 Upload Date: March 10, 2025</span>
+                                <span>👀 Views: 2,340</span>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                    </div>
+
+                    <div class="ad-card">
+                        <div class="ad-image">♻️</div>
+                        <div class="ad-content">
+                            <h4>Recycling Awareness</h4>
+                            <div class="ad-meta">
+                                <span>📍 Assigned to: All Zone A Bins</span>
+                                <span>📅 Upload Date: March 8, 2025</span>
+                                <span>👀 Views: 1,850</span>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                    </div>
+
+                    <div class="ad-card">
+                        <div class="ad-image">🌱</div>
+                        <div class="ad-content">
+                            <h4>Plant a Tree Initiative</h4>
+                            <div class="ad-meta">
+                                <span>📍 Assigned to: Bin #17, #23</span>
+                                <span>📅 Upload Date: March 5, 2025</span>
+                                <span>👀 Views: 1,420</span>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                    </div>
+
+                    <div class="ad-card">
+                        <div class="ad-image">🏙️</div>
+                        <div class="ad-content">
+                            <h4>Clean City Campaign</h4>
+                            <div class="ad-meta">
+                                <span>📍 Assigned to: Bin #09, #15</span>
+                                <span>📅 Upload Date: March 3, 2025</span>
+                                <span>👀 Views: 980</span>
+                            </div>
+                            <span class="status-badge pending">Pending Review</span>
+                        </div>
+                    </div>
+
+                    <div class="ad-card">
+                        <div class="ad-image">💧</div>
+                        <div class="ad-content">
+                            <h4>Water Conservation</h4>
+                            <div class="ad-meta">
+                                <span>📍 Assigned to: University Campus Bins</span>
+                                <span>📅 Upload Date: February 28, 2025</span>
+                                <span>👀 Views: 2,100</span>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                    </div>
+
+                    <div class="ad-card">
+                        <div class="ad-image">🌿</div>
+                        <div class="ad-content">
+                            <h4>Eco-Friendly Products</h4>
+                            <div class="ad-meta">
+                                <span>📍 Assigned to: Mall & Shopping Bins</span>
+                                <span>📅 Upload Date: February 25, 2025</span>
+                                <span>👀 Views: 1,650</span>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Tera Compute | EcoTrack – Ads Manager</p>
+        </div>
+    </footer>
+</body>
+</html>

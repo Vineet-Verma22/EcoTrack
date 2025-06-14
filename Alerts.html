@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Alerts Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Alerts.css">
+</head>
+<body>
+    <!-- Natural floating background with glassmorphism -->
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">EcoTrack</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="manageBin.html">Manage Bins</a></li>
+                        <li><a href="Ads.html">Ads</a></li>
+                        <li><a href="#" class="active">Alerts</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Alerts Center</h1>
+
+            <!-- Stats Bar -->
+            <section class="stats-bar">
+                <div class="stat-card stat-critical">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Critical Alerts</div>
+                </div>
+                <div class="stat-card stat-warning">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Warning Alerts</div>
+                </div>
+                <div class="stat-card stat-info">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Info Alerts</div>
+                </div>
+                <div class="stat-card stat-total">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">Total Active</div>
+                </div>
+            </section>
+
+            <!-- Filter Bar -->
+            <section class="filter-bar">
+                <div class="filter-title">Filter by Severity</div>
+                <div class="filter-buttons">
+                    <div class="filter-btn active">All Alerts</div>
+                    <div class="filter-btn critical">🔴 Critical</div>
+                    <div class="filter-btn warning">🟡 Warning</div>
+                    <div class="filter-btn info">🔵 Info</div>
+                </div>
+            </section>
+
+            <!-- Alerts Section -->
+            <section class="alerts-section">
+                <div class="alerts-header">
+                    <h3 class="alerts-title">Recent Alerts</h3>
+                    <span class="alerts-count">10 Active</span>
+                </div>
+                
+                <div class="alerts-list">
+                    <div class="alert-item alert-critical">
+                        <span class="alert-icon">🚨</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Bin #17 is completely full</div>
+                            <div class="alert-description">Smart bin has reached maximum capacity and requires immediate collection</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">2 min ago</div>
+                            <span class="alert-severity severity-critical">Critical</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-critical">
+                        <span class="alert-icon">📡</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Sensor disconnected - Bin #09</div>
+                            <div class="alert-description">Communication lost with bin sensor, manual inspection required</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">8 min ago</div>
+                            <span class="alert-severity severity-critical">Critical</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-critical">
+                        <span class="alert-icon">🔥</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Temperature spike detected - Bin #23</div>
+                            <div class="alert-description">Unusual heat detected, possible fire hazard or chemical reaction</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">12 min ago</div>
+                            <span class="alert-severity severity-critical">Critical</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-warning">
+                        <span class="alert-icon">🔋</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Battery low in Bin #23</div>
+                            <div class="alert-description">Power level at 15%, replacement or charging needed within 24 hours</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">45 min ago</div>
+                            <span class="alert-severity severity-warning">Warning</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-warning">
+                        <span class="alert-icon">⚠️</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Bin #14 approaching capacity</div>
+                            <div class="alert-description">Current fill level at 85%, collection recommended within 6 hours</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">1 hour ago</div>
+                            <span class="alert-severity severity-warning">Warning</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-warning">
+                        <span class="alert-icon">🌡️</span>
+                        <div class="alert-content">
+                            <div class="alert-title">High ambient temperature - Zone C</div>
+                            <div class="alert-description">Temperature above normal range may affect sensor accuracy</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">1 hour ago</div>
+                            <span class="alert-severity severity-warning">Warning</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-warning">
+                        <span class="alert-icon">📶</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Weak signal strength - Bin #31</div>
+                            <div class="alert-description">Network connectivity issues detected, data transmission may be delayed</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">2 hours ago</div>
+                            <span class="alert-severity severity-warning">Warning</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-warning">
+                        <span class="alert-icon">🔧</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Maintenance due - Bin #07</div>
+                            <div class="alert-description">Scheduled maintenance overdue by 3 days, service appointment needed</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">3 hours ago</div>
+                            <span class="alert-severity severity-warning">Warning</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-info">
+                        <span class="alert-icon">✅</span>
+                        <div class="alert-content">
+                            <div class="alert-title">Bin #05 successfully emptied</div>
+                            <div class="alert-description">Collection completed, bin capacity reset to 0%</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">4 hours ago</div>
+                            <span class="alert-severity severity-info">Info</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-item alert-info">
+                        <span class="alert-icon">📱</span>
+                        <div class="alert-content">
+                            <div class="alert-title">New advertisement deployed to Zone A</div>
+                            <div class="alert-description">Campaign "Green Living Tips" successfully activated on 8 bins</div>
+                        </div>
+                        <div class="alert-meta">
+                            <div class="alert-time">5 hours ago</div>
+                            <span class="alert-severity severity-info">Info</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Tera Compute | EcoTrack - Alerts Center</p>
+        </div>
+    </footer>
+</body>
+</html>
